@@ -1,0 +1,28 @@
+name: furtherance
+base: core22
+version: git
+summary: Track your time without being tracked 
+description: |
+    Furtherance is a time tracking app, with a native interface on Gnome, Windows, and Mac.
+    It allows you to track time spent on different activities without worrying about your data being captured and sold.
+license: GPL-3.0
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: amd64
+    build-for: amd64
+#  - build-on: amd64
+#    build-for: arm64
+
+apps:
+  furtherance:
+    command: furtherance
+    extensions: [ gnome ]
+    plugs: [ home ]
+
+parts:
+  furtherance:
+    plugin: meson
+    source: .
