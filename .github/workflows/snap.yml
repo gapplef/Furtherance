@@ -3,8 +3,8 @@ name: Build Snap Package
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
+    branches:
+      - main
 
 jobs:
   build-snap-package:
@@ -17,5 +17,5 @@ jobs:
         with:
           name: snap
           # path: ${{ steps.snapcraft.outputs.snap }}
-          path: furtherance *.snap
+          path: furtherance*.snap
           retention-days: 1
