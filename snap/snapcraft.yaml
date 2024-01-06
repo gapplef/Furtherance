@@ -26,3 +26,7 @@ parts:
   furtherance:
     plugin: meson
     source: .
+    build-packages:
+     - rust
+     - cargo
+     - sqlite3
