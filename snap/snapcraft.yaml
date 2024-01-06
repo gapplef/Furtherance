@@ -16,11 +16,17 @@ architectures:
 #  - build-on: amd64
 #    build-for: arm64
 
+slots:
+  dbus-svc:
+    interface: dbus
+    bus: session
+
 apps:
   furtherance:
     command: usr/bin/furtherance
     extensions: [ gnome ]
     plugs: [ home ]
+    slots: [ dbus-svc ]
 
 parts:
   furtherance:
