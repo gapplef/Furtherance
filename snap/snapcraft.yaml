@@ -30,3 +30,13 @@ parts:
      - cargo
      - rustc
      - sqlite3
+
+  test:
+    after: [ furtherance ]
+    plugin: nil
+    override-build: ''
+    override-stage: ''
+    override-prime: |
+      pwd
+      ls -lh
+      ls -lh usr/bin
