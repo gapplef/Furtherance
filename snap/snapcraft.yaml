@@ -40,4 +40,4 @@ parts:
       pwd
       ls -lh
       ls -lh usr
-      ls -lh snap
+      ls -lh snap/command-chain
