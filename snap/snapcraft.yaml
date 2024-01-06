@@ -1,4 +1,4 @@
-name: furtherance
+name: com.lakoliu.Furtherance
 base: core22
 version: git
 summary: Track your time without being tracked 
@@ -16,17 +16,17 @@ architectures:
 #  - build-on: amd64
 #    build-for: arm64
 
-slots:
-  dbus-svc:
-    interface: dbus
-    bus: session
+#slots:
+#  dbus-svc:
+#    interface: dbus
+#    bus: session
 
 apps:
-  furtherance:
+  com.lakoliu.Furtherance:
     command: usr/bin/furtherance
     extensions: [ gnome ]
     plugs: [ home ]
-    slots: [ dbus-svc ]
+    # slots: [ dbus-svc ]
 
 parts:
   furtherance:
