@@ -25,6 +25,9 @@ apps:
 parts:
   furtherance:
     plugin: meson
+    meson-parameters:
+      - --prefix=/usr
+      - --buildtype=release
     source: .
     build-packages:
      - cargo
@@ -40,4 +43,4 @@ parts:
       pwd
       ls -lh
       ls -lh usr
-      ls -lh snap/command-chain
+      ls -lh usr/bin
