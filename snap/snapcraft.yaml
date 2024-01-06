@@ -39,4 +39,5 @@ parts:
     override-prime: |
       pwd
       ls -lh
-      ls -lh usr/bin
+      ls -lh usr
+      ls -lh snap
