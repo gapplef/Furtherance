@@ -27,6 +27,6 @@ parts:
     plugin: meson
     source: .
     build-packages:
-     - rust
      - cargo
+     - rustc
      - sqlite3
