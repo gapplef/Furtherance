@@ -18,7 +18,7 @@ architectures:
 
 apps:
   furtherance:
-    command: furtherance
+    command: usr/bin/furtherance
     extensions: [ gnome ]
     plugs: [ home ]
 
